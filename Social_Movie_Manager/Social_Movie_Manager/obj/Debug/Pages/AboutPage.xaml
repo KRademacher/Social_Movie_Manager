@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="Social_Movie_Manager.Pages.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:drawerLayout="using:DrawerLayout"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Social_Movie_Manager"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="RootLayout">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--Title Bar-->
+        <Grid x:Name="TitleBar" Grid.Row="0" Height="60">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image x:ConnectionId='2' Margin="10" x:Name="DrawerIcon" Grid.Column="0" Source="/Assets/drawer_icon.png" HorizontalAlignment="Left"                           />
+            <TextBlock Grid.Column="1" Text="About" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+        </Grid>
+        <!--Drawer Layout-->
+        <drawerLayout:DrawerLayout Grid.Row="1" x:Name="DrawerLayout">
+            <Grid x:Name="MainFragment" Background="White">
+                <!--Main Content goes here-->
+                <TextBlock Text="Social Movie Manager" Foreground="Black" FontSize="22" FontWeight="Bold"/>
+                <TextBlock x:Name="Description" Text="{Binding}" Foreground="Black" FontSize="16" TextWrapping="WrapWholeWords" Margin="0,50,0,0"/>
+            </Grid>
+            <Grid x:Name="ListFragment" Background="#F4F4F4">
+                <ListView IsItemClickEnabled="True">
+                    <local:Slide_Menu x:ConnectionId='1' x:Name="SlideMenu" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black"                                />
+                </ListView>
+            </Grid>
+        </drawerLayout:DrawerLayout>
+    </Grid>
+</Page>
+
