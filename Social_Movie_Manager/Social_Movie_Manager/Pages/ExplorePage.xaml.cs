@@ -21,7 +21,9 @@ namespace Social_Movie_Manager.Pages
     public sealed partial class ExplorePage : Page
     {
         TMDB tmdb;
-        public List<MovieInfo> Popular;
+        public List<MovieInfo> PopularMovies;
+        public List<Movie> UpcomingMovies;
+        public List<Movie> NITMovies;
         public ExplorePage()
         {
             this.InitializeComponent();
@@ -29,10 +31,12 @@ namespace Social_Movie_Manager.Pages
 
             tmdb = new TMDB();
 
-            HorizontalScroll1.DataContext = Popular;
+            Popular.DataContext = Popular;
             Task.Run(() =>
             {
-                Popular = tmdb.GetMovieInfo(TMDB.SearchType.Popular, 1);
+                PopularMovies = tmdb.GetMovieInfo(TMDB.SearchType.Popular, 1);
+                UpcomingMovies = tmdb.Get_Upcoming_NowPlaying(TMDB.SearchType.Upcoming, 1);
+                NITMovies = tmdb.Get_Upcoming_NowPlaying(TMDB.SearchType.NowPlaying, 1);
                 UpdateUI();
             });
 
@@ -44,7 +48,9 @@ namespace Social_Movie_Manager.Pages
 
             await Dispatcher.RunAsync(CoreDispatcherPriority.High, () =>
             {
-                HorizontalScroll1.CreateElementsMovieInfo(ref Popular); 
+                Popular.CreateElementsMovieInfo(ref PopularMovies, true, "Popular");
+                Upcoming.CreateElementsMovie(ref UpcomingMovies, true, "Upcoming");
+                NowInTheaters.CreateElementsMovie(ref NITMovies, true, "Now in the theaters");
             });
         }
 

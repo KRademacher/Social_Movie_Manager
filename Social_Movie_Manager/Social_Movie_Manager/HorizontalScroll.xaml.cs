@@ -22,22 +22,29 @@ namespace Social_Movie_Manager
 {
     public sealed partial class HorizontalScroll : UserControl
     {
-        public void CreateElementsMovieInfo(ref List<MovieInfo> _movieInfo)
+        public void CreateElementsMovieInfo(ref List<MovieInfo> _movieInfo, bool _setTitle, string _title = null)
         {
             int index = 0;
-            //_root.Children.Clear();
-            _root.ColumnDefinitions.Clear();
             _root.Height = 160;
             _root.RowDefinitions.Add(new RowDefinition());
 
+            // !!OPTIONAL!! Set title text and title settings
+            if (_setTitle)
+            {
+                Title.Text = _title;
+            }
+
+            //Create button and textblock for every movie
             foreach (var item in _movieInfo)
             {
-                _root.ColumnDefinitions.Add(new ColumnDefinition());
+                //Initialize button, image, textblock and margin
                 Button btn = new Button();
                 Image img = new Image();
                 TextBlock txt = new TextBlock();
                 Thickness txtMargin = new Thickness(5, 0, 10, 5);
 
+                //Set element info
+                _root.ColumnDefinitions.Add(new ColumnDefinition());
                 img.Source = new BitmapImage(new Uri(string.Format("http://image.tmdb.org/t/p/w342{0}", item.PosterPath)));
                 btn.Content = img;
                 txt.Text = item.Title;
@@ -57,6 +64,59 @@ namespace Social_Movie_Manager
                 txt.VerticalAlignment = VerticalAlignment.Bottom;
                 txt.Margin = txtMargin;
                 txt.Height = 35;
+                txt.Width = 110;    
+                txt.SetValue(Grid.ColumnProperty, index);
+                index = index + 1;
+
+                //Add elements to grid
+                _root.Children.Add(btn);
+                _root.Children.Add(txt);
+            }
+            this.UpdateLayout();
+        }
+
+        public void CreateElementsMovie(ref List<Movie> _movieInfo, bool _setTitle, string _title = null)
+        {
+            int index = 0;
+            _root.Height = 160;
+            _root.RowDefinitions.Add(new RowDefinition());
+
+            // !!OPTIONAL!! Set title text and title settings
+            if (_setTitle)
+            {
+                Title.Text = _title;
+            }
+
+            foreach (var item in _movieInfo)
+            {
+                //Initialize button, image, textblock and margin
+                Button btn = new Button();
+                Image img = new Image();
+                TextBlock txt = new TextBlock();
+                Thickness txtMargin = new Thickness(5, 0, 10, 5);
+
+                //Set element info
+                _root.ColumnDefinitions.Add(new ColumnDefinition());
+                img.Source = new BitmapImage(new Uri(string.Format("http://image.tmdb.org/t/p/w342{0}", item.PosterPath)));
+                btn.Content = img;
+                txt.Text = item.Title;
+
+                //Button settings
+                btn.Height = 130;
+                btn.Width = 130;
+                btn.Background = new SolidColorBrush(Colors.Black);
+                btn.VerticalAlignment = VerticalAlignment.Top;
+                btn.SetValue(Grid.ColumnProperty, index);
+
+                //Textbox settings
+                txt.TextWrapping = TextWrapping.WrapWholeWords;
+                txt.TextAlignment = TextAlignment.Center;
+                txt.Foreground = new SolidColorBrush(Colors.Black);
+                txt.FontSize = 14;
+                txt.VerticalAlignment = VerticalAlignment.Bottom;
+                txt.Margin = txtMargin;
+                txt.Height = 35;
+                txt.Width = 110;
                 txt.SetValue(Grid.ColumnProperty, index);
                 index = index + 1;
 
