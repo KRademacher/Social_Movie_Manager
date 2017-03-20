@@ -1,17 +1,13 @@
-﻿using System;
+﻿using DM.MovieApi.MovieDb.Movies;
+using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using Windows.Phone.UI.Input;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
@@ -24,17 +20,38 @@ namespace Social_Movie_Manager.Pages
     /// </summary>
     public sealed partial class ExplorePage : Page
     {
+        TMDB tmdb;
+        public List<MovieInfo> Popular;
         public ExplorePage()
         {
             this.InitializeComponent();
             DrawerLayout.InitializeDrawerLayout();
 
-            HorizontalScroll1.TextBlock1Content = "Sherlock";
+            tmdb = new TMDB();
 
-            Image image = new Image();
-            image.Source = new BitmapImage(new Uri("ms-appx://Assets/drawer_icon.png", UriKind.RelativeOrAbsolute));
-            HorizontalScroll1.Button1Content = image;
+            HorizontalScroll1.DataContext = Popular;
+            Task.Run(() =>
+            {
+                Popular = tmdb.GetMovieInfo(TMDB.SearchType.Popular, 1);
+                UpdateUI();
+            });
+
         }
+
+        private async void UpdateUI()
+        {
+
+            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+            {
+                HorizontalScroll1.TextBlock1Content = Popular[0].Title;
+
+                Image image = new Image();
+                image.Source = new BitmapImage(new Uri(string.Format("http://image.tmdb.org/t/p/w342{0}", Popular[0].PosterPath)));
+                HorizontalScroll1.Button1Content = image;
+
+            });
+        }
+
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.

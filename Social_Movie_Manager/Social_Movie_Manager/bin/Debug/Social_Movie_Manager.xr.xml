@@ -52,7 +52,9 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Tapped" />
     </RootType>
-    <RootType FullName="Social_Movie_Manager.HorizontalScroll" />
+    <RootType FullName="Social_Movie_Manager.HorizontalScroll">
+      <RootProperty Name="Button1Content" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />

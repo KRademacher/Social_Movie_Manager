@@ -33,7 +33,7 @@
                 </Grid.RowDefinitions>
                 <!--Main Content goes here-->
                 <StackPanel>
-                    <local:HorizontalScroll x:Name="HorizontalScroll1"/>
+                    <local:HorizontalScroll x:Name="HorizontalScroll1" Button1Content=""/>
                     <local:HorizontalScroll x:Name="HorizontalScroll2"/>
                 </StackPanel>
             </Grid>

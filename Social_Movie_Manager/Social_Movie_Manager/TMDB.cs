@@ -95,49 +95,46 @@ namespace Social_Movie_Manager
             return response;
         }
 
-   
+        public List<Movie> Get_Upcoming_NowPlaying(SearchType _searchType, int _page)
+        {
+            ApiSearchResponse<Movie> Movies;
+
+            switch (_searchType)
+            {
+                case SearchType.Upcoming:
+                    Movies = GetUpcomingMovies(_page).Result;
+                    return new List<Movie>(Movies.Results);
+                case SearchType.NowPlaying:
+                    Movies = GetNowPlayingMovies(_page).Result;
+                    return new List<Movie>(Movies.Results);
+                default:
+                    return null;
+            }   
+        }
 
         //Get movies together with it's cast
         //Put in dictionary<object, moviecredit> by parallel foreach
-        public ObservableCollection<object> GetFullMovieInfo(SearchType _searchType,int _page, string _movieName = null, int _genreID = 0)
+        public List<MovieInfo> GetMovieInfo( SearchType _searchType,int _page, string _movieName = null, int _genreID = 0)
         {
-            ObservableCollection<object> list = new ObservableCollection<object>();
             ApiSearchResponse<MovieInfo> movieInfos;
-            ApiSearchResponse<Movie> movies;
 
             switch (_searchType)
             {
                 case SearchType.ByName:
                     movieInfos = GetMovieByName(_movieName, _page).Result;
-                    list.Add(movieInfos.Results);
-                    
-                    break;
+                    return new List<MovieInfo>(movieInfos.Results);
                 case SearchType.Popular:
                     movieInfos = GetPopularMovies(_page).Result;
-                    list.Add(movieInfos.Results);
-                        break;
-                case SearchType.Upcoming:
-                    movies = GetUpcomingMovies(_page).Result;
-                    list.Add(movies.Results);
-                    break;
-                case SearchType.NowPlaying:
-                    movies = GetNowPlayingMovies(_page).Result;
-                    list.Add(movies.Results);
-                    break;
+                    return new List<MovieInfo>(movieInfos.Results);
                 case SearchType.TopRated:
                     movieInfos = GetTopRatedMovies(_page).Result;
-                    list.Add(movieInfos.Results);
-                    break;
+                    return new List<MovieInfo>(movieInfos.Results);
                 case SearchType.Genre:
                     movieInfos = GetMovieByGenre(_genreID,_page).Result;
-                    list.Add(movieInfos.Results);
-                    break;
+                    return new List<MovieInfo>(movieInfos.Results);
+                default:
+                    return null;
             }
-            return list;
         }
-
-
-
-
     }
 }
