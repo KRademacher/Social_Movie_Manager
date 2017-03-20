@@ -82,6 +82,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExploreViewModel.cs" />
     <Compile Include="HorizontalScroll.xaml.cs">
       <DependentUpon>HorizontalScroll.xaml</DependentUpon>
     </Compile>
@@ -107,6 +108,7 @@
     <Compile Include="Slide Menu.xaml.cs">
       <DependentUpon>Slide Menu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TMDB.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -161,8 +163,16 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="DM.MovieApi, Version=0.8.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TheMovieDbWrapper.0.8.2\lib\netstandard1.1\DM.MovieApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="DrawerLayout, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DrawerLayout.1.0.4\lib\DrawerLayout.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

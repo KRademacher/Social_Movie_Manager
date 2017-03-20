@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP</Machine>
-    <WindowsUser>Kevin</WindowsUser>
+    <Machine>DESKTOP-1TIGEEN</Machine>
+    <WindowsUser>jules</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
@@ -10,82 +10,88 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>d0d74e90-c9ff-4ab4-afe7-27790ebd1085</PackageIdentityName>
     <PackageIdentityPublisher>CN=Kevin</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Social_Movie_Manager.exe">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Social_Movie_Manager.exe">
       <PackagePath>Social_Movie_Manager.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\packages\DrawerLayout.1.0.4\lib\DrawerLayout.dll">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\packages\TheMovieDbWrapper.0.8.2\lib\netstandard1.1\DM.MovieApi.dll">
+      <PackagePath>DM.MovieApi.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\packages\DrawerLayout.1.0.4\lib\DrawerLayout.dll">
       <PackagePath>DrawerLayout.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\Assets\drawer_icon.png">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\drawer_icon.png">
       <PackagePath>Assets\drawer_icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Social_Movie_Manager.xr.xml">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Social_Movie_Manager.xr.xml">
       <PackagePath>Social_Movie_Manager.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\HorizontalScroll.xbf">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\HorizontalScroll.xbf">
       <PackagePath>HorizontalScroll.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\AboutPage.xbf">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\AboutPage.xbf">
       <PackagePath>Pages\AboutPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\ExplorePage.xbf">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\ExplorePage.xbf">
       <PackagePath>Pages\ExplorePage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\GroupsPage.xbf">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\GroupsPage.xbf">
       <PackagePath>Pages\GroupsPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\MainPage.xbf">
       <PackagePath>Pages\MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\BlacklistPage.xbf">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\BlacklistPage.xbf">
       <PackagePath>Pages\BlacklistPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\WishlistPage.xbf">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\WishlistPage.xbf">
       <PackagePath>Pages\WishlistPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Slide Menu.xbf">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Slide Menu.xbf">
       <PackagePath>Slide Menu.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kevin\documents\visual studio 2015\Projects\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
