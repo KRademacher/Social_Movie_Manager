@@ -38,17 +38,13 @@ namespace Social_Movie_Manager.Pages
 
         }
 
+        //Update the GUI async
         private async void UpdateUI()
         {
 
-            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+            await Dispatcher.RunAsync(CoreDispatcherPriority.High, () =>
             {
-                HorizontalScroll1.TextBlock1Content = Popular[0].Title;
-
-                Image image = new Image();
-                image.Source = new BitmapImage(new Uri(string.Format("http://image.tmdb.org/t/p/w342{0}", Popular[0].PosterPath)));
-                HorizontalScroll1.Button1Content = image;
-
+                HorizontalScroll1.CreateElementsMovieInfo(ref Popular); 
             });
         }
 

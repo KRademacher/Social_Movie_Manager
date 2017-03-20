@@ -124,41 +124,37 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[16];
+            _typeNameTable = new string[14];
             _typeNameTable[0] = "Social_Movie_Manager.HorizontalScroll";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[2] = "Object";
-            _typeNameTable[3] = "String";
-            _typeNameTable[4] = "DrawerLayout.DrawerLayout";
-            _typeNameTable[5] = "Windows.UI.Xaml.Controls.Grid";
-            _typeNameTable[6] = "Windows.UI.Xaml.Controls.Panel";
-            _typeNameTable[7] = "Boolean";
-            _typeNameTable[8] = "Social_Movie_Manager.Slide_Menu";
-            _typeNameTable[9] = "Social_Movie_Manager.Pages.AboutPage";
-            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[11] = "Social_Movie_Manager.Pages.ExplorePage";
-            _typeNameTable[12] = "Social_Movie_Manager.Pages.GroupsPage";
-            _typeNameTable[13] = "Social_Movie_Manager.Pages.MainPage";
-            _typeNameTable[14] = "Social_Movie_Manager.Pages.BlacklistPage";
-            _typeNameTable[15] = "Social_Movie_Manager.Pages.WishlistPage";
+            _typeNameTable[2] = "DrawerLayout.DrawerLayout";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.Grid";
+            _typeNameTable[4] = "Windows.UI.Xaml.Controls.Panel";
+            _typeNameTable[5] = "Boolean";
+            _typeNameTable[6] = "Social_Movie_Manager.Slide_Menu";
+            _typeNameTable[7] = "Social_Movie_Manager.Pages.AboutPage";
+            _typeNameTable[8] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[9] = "Social_Movie_Manager.Pages.ExplorePage";
+            _typeNameTable[10] = "Social_Movie_Manager.Pages.GroupsPage";
+            _typeNameTable[11] = "Social_Movie_Manager.Pages.MainPage";
+            _typeNameTable[12] = "Social_Movie_Manager.Pages.BlacklistPage";
+            _typeNameTable[13] = "Social_Movie_Manager.Pages.WishlistPage";
 
-            _typeTable = new global::System.Type[16];
+            _typeTable = new global::System.Type[14];
             _typeTable[0] = typeof(global::Social_Movie_Manager.HorizontalScroll);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[2] = typeof(global::System.Object);
-            _typeTable[3] = typeof(global::System.String);
-            _typeTable[4] = typeof(global::DrawerLayout.DrawerLayout);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.Grid);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.Panel);
-            _typeTable[7] = typeof(global::System.Boolean);
-            _typeTable[8] = typeof(global::Social_Movie_Manager.Slide_Menu);
-            _typeTable[9] = typeof(global::Social_Movie_Manager.Pages.AboutPage);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[11] = typeof(global::Social_Movie_Manager.Pages.ExplorePage);
-            _typeTable[12] = typeof(global::Social_Movie_Manager.Pages.GroupsPage);
-            _typeTable[13] = typeof(global::Social_Movie_Manager.Pages.MainPage);
-            _typeTable[14] = typeof(global::Social_Movie_Manager.Pages.BlacklistPage);
-            _typeTable[15] = typeof(global::Social_Movie_Manager.Pages.WishlistPage);
+            _typeTable[2] = typeof(global::DrawerLayout.DrawerLayout);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Grid);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Panel);
+            _typeTable[5] = typeof(global::System.Boolean);
+            _typeTable[6] = typeof(global::Social_Movie_Manager.Slide_Menu);
+            _typeTable[7] = typeof(global::Social_Movie_Manager.Pages.AboutPage);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[9] = typeof(global::Social_Movie_Manager.Pages.ExplorePage);
+            _typeTable[10] = typeof(global::Social_Movie_Manager.Pages.GroupsPage);
+            _typeTable[11] = typeof(global::Social_Movie_Manager.Pages.MainPage);
+            _typeTable[12] = typeof(global::Social_Movie_Manager.Pages.BlacklistPage);
+            _typeTable[13] = typeof(global::Social_Movie_Manager.Pages.WishlistPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -194,14 +190,14 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
         }
 
         private object Activate_0_HorizontalScroll() { return new global::Social_Movie_Manager.HorizontalScroll(); }
-        private object Activate_4_DrawerLayout() { return new global::DrawerLayout.DrawerLayout(); }
-        private object Activate_8_Slide_Menu() { return new global::Social_Movie_Manager.Slide_Menu(); }
-        private object Activate_9_AboutPage() { return new global::Social_Movie_Manager.Pages.AboutPage(); }
-        private object Activate_11_ExplorePage() { return new global::Social_Movie_Manager.Pages.ExplorePage(); }
-        private object Activate_12_GroupsPage() { return new global::Social_Movie_Manager.Pages.GroupsPage(); }
-        private object Activate_13_MainPage() { return new global::Social_Movie_Manager.Pages.MainPage(); }
-        private object Activate_14_BlacklistPage() { return new global::Social_Movie_Manager.Pages.BlacklistPage(); }
-        private object Activate_15_WishlistPage() { return new global::Social_Movie_Manager.Pages.WishlistPage(); }
+        private object Activate_2_DrawerLayout() { return new global::DrawerLayout.DrawerLayout(); }
+        private object Activate_6_Slide_Menu() { return new global::Social_Movie_Manager.Slide_Menu(); }
+        private object Activate_7_AboutPage() { return new global::Social_Movie_Manager.Pages.AboutPage(); }
+        private object Activate_9_ExplorePage() { return new global::Social_Movie_Manager.Pages.ExplorePage(); }
+        private object Activate_10_GroupsPage() { return new global::Social_Movie_Manager.Pages.GroupsPage(); }
+        private object Activate_11_MainPage() { return new global::Social_Movie_Manager.Pages.MainPage(); }
+        private object Activate_12_BlacklistPage() { return new global::Social_Movie_Manager.Pages.BlacklistPage(); }
+        private object Activate_13_WishlistPage() { return new global::Social_Movie_Manager.Pages.WishlistPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -216,14 +212,6 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
             case 0:   //  Social_Movie_Manager.HorizontalScroll
                 userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_0_HorizontalScroll;
-                userType.AddMemberName("Button1Content");
-                userType.AddMemberName("Button2Content");
-                userType.AddMemberName("Button3Content");
-                userType.AddMemberName("Button4Content");
-                userType.AddMemberName("TextBlock1Content");
-                userType.AddMemberName("TextBlock2Content");
-                userType.AddMemberName("TextBlock3Content");
-                userType.AddMemberName("TextBlock4Content");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -232,82 +220,74 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
                 xamlType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Object
-                xamlType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  String
-                xamlType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 4:   //  DrawerLayout.DrawerLayout
+            case 2:   //  DrawerLayout.DrawerLayout
                 userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Grid"));
-                userType.Activator = Activate_4_DrawerLayout;
+                userType.Activator = Activate_2_DrawerLayout;
                 userType.AddMemberName("IsDrawerOpen");
                 xamlType = userType;
                 break;
 
-            case 5:   //  Windows.UI.Xaml.Controls.Grid
+            case 3:   //  Windows.UI.Xaml.Controls.Grid
                 xamlType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Windows.UI.Xaml.Controls.Panel
+            case 4:   //  Windows.UI.Xaml.Controls.Panel
                 xamlType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Boolean
+            case 5:   //  Boolean
                 xamlType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Social_Movie_Manager.Slide_Menu
+            case 6:   //  Social_Movie_Manager.Slide_Menu
                 userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_8_Slide_Menu;
+                userType.Activator = Activate_6_Slide_Menu;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Social_Movie_Manager.Pages.AboutPage
+            case 7:   //  Social_Movie_Manager.Pages.AboutPage
                 userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_AboutPage;
+                userType.Activator = Activate_7_AboutPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Windows.UI.Xaml.Controls.Page
+            case 8:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Social_Movie_Manager.Pages.ExplorePage
+            case 9:   //  Social_Movie_Manager.Pages.ExplorePage
                 userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_ExplorePage;
+                userType.Activator = Activate_9_ExplorePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Social_Movie_Manager.Pages.GroupsPage
+            case 10:   //  Social_Movie_Manager.Pages.GroupsPage
                 userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_GroupsPage;
+                userType.Activator = Activate_10_GroupsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  Social_Movie_Manager.Pages.MainPage
+            case 11:   //  Social_Movie_Manager.Pages.MainPage
                 userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_MainPage;
+                userType.Activator = Activate_11_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Social_Movie_Manager.Pages.BlacklistPage
+            case 12:   //  Social_Movie_Manager.Pages.BlacklistPage
                 userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_BlacklistPage;
+                userType.Activator = Activate_12_BlacklistPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Social_Movie_Manager.Pages.WishlistPage
+            case 13:   //  Social_Movie_Manager.Pages.WishlistPage
                 userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_WishlistPage;
+                userType.Activator = Activate_13_WishlistPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -316,92 +296,12 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
         }
 
 
-        private object get_0_HorizontalScroll_Button1Content(object instance)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            return that.Button1Content;
-        }
-        private void set_0_HorizontalScroll_Button1Content(object instance, object Value)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            that.Button1Content = (global::System.Object)Value;
-        }
-        private object get_1_HorizontalScroll_Button2Content(object instance)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            return that.Button2Content;
-        }
-        private void set_1_HorizontalScroll_Button2Content(object instance, object Value)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            that.Button2Content = (global::System.Object)Value;
-        }
-        private object get_2_HorizontalScroll_Button3Content(object instance)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            return that.Button3Content;
-        }
-        private void set_2_HorizontalScroll_Button3Content(object instance, object Value)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            that.Button3Content = (global::System.Object)Value;
-        }
-        private object get_3_HorizontalScroll_Button4Content(object instance)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            return that.Button4Content;
-        }
-        private void set_3_HorizontalScroll_Button4Content(object instance, object Value)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            that.Button4Content = (global::System.Object)Value;
-        }
-        private object get_4_HorizontalScroll_TextBlock1Content(object instance)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            return that.TextBlock1Content;
-        }
-        private void set_4_HorizontalScroll_TextBlock1Content(object instance, object Value)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            that.TextBlock1Content = (global::System.String)Value;
-        }
-        private object get_5_HorizontalScroll_TextBlock2Content(object instance)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            return that.TextBlock2Content;
-        }
-        private void set_5_HorizontalScroll_TextBlock2Content(object instance, object Value)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            that.TextBlock2Content = (global::System.String)Value;
-        }
-        private object get_6_HorizontalScroll_TextBlock3Content(object instance)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            return that.TextBlock3Content;
-        }
-        private void set_6_HorizontalScroll_TextBlock3Content(object instance, object Value)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            that.TextBlock3Content = (global::System.String)Value;
-        }
-        private object get_7_HorizontalScroll_TextBlock4Content(object instance)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            return that.TextBlock4Content;
-        }
-        private void set_7_HorizontalScroll_TextBlock4Content(object instance, object Value)
-        {
-            var that = (global::Social_Movie_Manager.HorizontalScroll)instance;
-            that.TextBlock4Content = (global::System.String)Value;
-        }
-        private object get_8_DrawerLayout_IsDrawerOpen(object instance)
+        private object get_0_DrawerLayout_IsDrawerOpen(object instance)
         {
             var that = (global::DrawerLayout.DrawerLayout)instance;
             return that.IsDrawerOpen;
         }
-        private void set_8_DrawerLayout_IsDrawerOpen(object instance, object Value)
+        private void set_0_DrawerLayout_IsDrawerOpen(object instance, object Value)
         {
             var that = (global::DrawerLayout.DrawerLayout)instance;
             that.IsDrawerOpen = (global::System.Boolean)Value;
@@ -414,60 +314,12 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "Social_Movie_Manager.HorizontalScroll.Button1Content":
-                userType = (global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Social_Movie_Manager.HorizontalScroll");
-                xamlMember = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlMember(this, "Button1Content", "Object");
-                xamlMember.Getter = get_0_HorizontalScroll_Button1Content;
-                xamlMember.Setter = set_0_HorizontalScroll_Button1Content;
-                break;
-            case "Social_Movie_Manager.HorizontalScroll.Button2Content":
-                userType = (global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Social_Movie_Manager.HorizontalScroll");
-                xamlMember = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlMember(this, "Button2Content", "Object");
-                xamlMember.Getter = get_1_HorizontalScroll_Button2Content;
-                xamlMember.Setter = set_1_HorizontalScroll_Button2Content;
-                break;
-            case "Social_Movie_Manager.HorizontalScroll.Button3Content":
-                userType = (global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Social_Movie_Manager.HorizontalScroll");
-                xamlMember = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlMember(this, "Button3Content", "Object");
-                xamlMember.Getter = get_2_HorizontalScroll_Button3Content;
-                xamlMember.Setter = set_2_HorizontalScroll_Button3Content;
-                break;
-            case "Social_Movie_Manager.HorizontalScroll.Button4Content":
-                userType = (global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Social_Movie_Manager.HorizontalScroll");
-                xamlMember = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlMember(this, "Button4Content", "Object");
-                xamlMember.Getter = get_3_HorizontalScroll_Button4Content;
-                xamlMember.Setter = set_3_HorizontalScroll_Button4Content;
-                break;
-            case "Social_Movie_Manager.HorizontalScroll.TextBlock1Content":
-                userType = (global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Social_Movie_Manager.HorizontalScroll");
-                xamlMember = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlMember(this, "TextBlock1Content", "String");
-                xamlMember.Getter = get_4_HorizontalScroll_TextBlock1Content;
-                xamlMember.Setter = set_4_HorizontalScroll_TextBlock1Content;
-                break;
-            case "Social_Movie_Manager.HorizontalScroll.TextBlock2Content":
-                userType = (global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Social_Movie_Manager.HorizontalScroll");
-                xamlMember = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlMember(this, "TextBlock2Content", "String");
-                xamlMember.Getter = get_5_HorizontalScroll_TextBlock2Content;
-                xamlMember.Setter = set_5_HorizontalScroll_TextBlock2Content;
-                break;
-            case "Social_Movie_Manager.HorizontalScroll.TextBlock3Content":
-                userType = (global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Social_Movie_Manager.HorizontalScroll");
-                xamlMember = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlMember(this, "TextBlock3Content", "String");
-                xamlMember.Getter = get_6_HorizontalScroll_TextBlock3Content;
-                xamlMember.Setter = set_6_HorizontalScroll_TextBlock3Content;
-                break;
-            case "Social_Movie_Manager.HorizontalScroll.TextBlock4Content":
-                userType = (global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Social_Movie_Manager.HorizontalScroll");
-                xamlMember = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlMember(this, "TextBlock4Content", "String");
-                xamlMember.Getter = get_7_HorizontalScroll_TextBlock4Content;
-                xamlMember.Setter = set_7_HorizontalScroll_TextBlock4Content;
-                break;
             case "DrawerLayout.DrawerLayout.IsDrawerOpen":
                 userType = (global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DrawerLayout.DrawerLayout");
                 xamlMember = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlMember(this, "IsDrawerOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_DrawerLayout_IsDrawerOpen;
-                xamlMember.Setter = set_8_DrawerLayout_IsDrawerOpen;
+                xamlMember.Getter = get_0_DrawerLayout_IsDrawerOpen;
+                xamlMember.Setter = set_0_DrawerLayout_IsDrawerOpen;
                 break;
             }
             return xamlMember;

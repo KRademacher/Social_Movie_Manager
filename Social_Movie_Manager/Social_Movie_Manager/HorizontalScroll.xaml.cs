@@ -1,16 +1,19 @@
-﻿using System;
+﻿using DM.MovieApi.MovieDb.Movies;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
@@ -19,54 +22,53 @@ namespace Social_Movie_Manager
 {
     public sealed partial class HorizontalScroll : UserControl
     {
-        public object Button1Content
+        public void CreateElementsMovieInfo(ref List<MovieInfo> _movieInfo)
         {
-            get { return this.Button1.Content; }
-            set { this.Button1.Content = value; }
-        }
-        public object Button2Content
-        {
-            get { return this.Button2.Content; }
-            set { this.Button2.Content = value; }
-        }
-        public object Button3Content
-        {
-            get { return this.Button3.Content; }
-            set { this.Button3.Content = value; }
-        }
-        public object Button4Content
-        {
-            get { return this.Button4.Content; }
-            set { this.Button4.Content = value; }
-        }
-        public string TextBlock1Content
-        {
-            get { return this.TextBlock1.Text; }
-            set { this.TextBlock1.Text = value; }
-        }
-        public string TextBlock2Content
-        {
-            get { return this.TextBlock2.Text; }
-            set { this.TextBlock2.Text = value; }
-        }
-        public string TextBlock3Content
-        {
-            get { return this.TextBlock3.Text; }
-            set { this.TextBlock3.Text = value; }
-        }
-        public string TextBlock4Content
-        {
-            get { return this.TextBlock4.Text; }
-            set { this.TextBlock4.Text = value; }
+            int index = 0;
+            //_root.Children.Clear();
+            _root.ColumnDefinitions.Clear();
+            _root.Height = 160;
+            _root.RowDefinitions.Add(new RowDefinition());
+
+            foreach (var item in _movieInfo)
+            {
+                _root.ColumnDefinitions.Add(new ColumnDefinition());
+                Button btn = new Button();
+                Image img = new Image();
+                TextBlock txt = new TextBlock();
+                Thickness txtMargin = new Thickness(5, 0, 10, 5);
+
+                img.Source = new BitmapImage(new Uri(string.Format("http://image.tmdb.org/t/p/w342{0}", item.PosterPath)));
+                btn.Content = img;
+                txt.Text = item.Title;
+
+                //Button settings
+                btn.Height = 130;
+                btn.Width = 130;
+                btn.Background = new SolidColorBrush(Colors.Black);
+                btn.VerticalAlignment = VerticalAlignment.Top;
+                btn.SetValue(Grid.ColumnProperty, index);
+
+                //Textbox settings
+                txt.TextWrapping = TextWrapping.WrapWholeWords;
+                txt.TextAlignment = TextAlignment.Center;
+                txt.Foreground = new SolidColorBrush(Colors.Black);
+                txt.FontSize = 14;
+                txt.VerticalAlignment = VerticalAlignment.Bottom;
+                txt.Margin = txtMargin;
+                txt.Height = 35;
+                txt.SetValue(Grid.ColumnProperty, index);
+                index = index + 1;
+
+                _root.Children.Add(btn);
+                _root.Children.Add(txt);
+            }
+            this.UpdateLayout();
         }
 
         public HorizontalScroll()
         {
             this.InitializeComponent();
-
-            Image image = new Image();
-            image.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(@"ms-appx:/Assets/drawer_icon.png", UriKind.RelativeOrAbsolute));
-            Button1Img = image;
         }
     }
 }
