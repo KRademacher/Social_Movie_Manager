@@ -42,7 +42,7 @@ namespace Social_Movie_Manager
 
         //Get all the movies that are popular at the moment
 
-        public async Task<ApiSearchResponse<MovieInfo>> GetPopularMovies(int _page)
+        private async Task<ApiSearchResponse<MovieInfo>> GetPopularMovies(int _page)
         {
             ApiSearchResponse<MovieInfo> response = await MovieApi.GetPopularAsync(_page, "en");
             return response;
@@ -50,21 +50,21 @@ namespace Social_Movie_Manager
 
         //Get all the movies that are now in the cinemas
 
-        public async Task<ApiSearchResponse<Movie>> GetNowPlayingMovies(int _page)
+        private async Task<ApiSearchResponse<Movie>> GetNowPlayingMovies(int _page)
         {
             ApiSearchResponse<Movie> response = await MovieApi.GetNowPlayingAsync(_page, "en");
             return response;
         }
 
         //Find a movie by it's name
-        public async Task<ApiSearchResponse<MovieInfo>> GetMovieByName(string _name, int _page)
+        private async Task<ApiSearchResponse<MovieInfo>> GetMovieByName(string _name, int _page)
         {
             ApiSearchResponse<MovieInfo> response = await MovieApi.SearchByTitleAsync(_name, _page, "en");
             return response;
         }
 
         //Get all the upcoming movies
-        public async Task<ApiSearchResponse<Movie>> GetUpcomingMovies(int _page)
+        private async Task<ApiSearchResponse<Movie>> GetUpcomingMovies(int _page)
         {
             ApiSearchResponse<Movie> response = await MovieApi.GetUpcomingAsync(_page, "en");
             
@@ -72,7 +72,7 @@ namespace Social_Movie_Manager
         }
 
         //Get all toprated movies
-        public async Task<ApiSearchResponse<MovieInfo>> GetTopRatedMovies(int _page)
+        private async Task<ApiSearchResponse<MovieInfo>> GetTopRatedMovies(int _page)
         {
             ApiSearchResponse<MovieInfo> response = await MovieApi.GetTopRatedAsync(_page, "en");
            
@@ -80,7 +80,7 @@ namespace Social_Movie_Manager
         }
 
         //Get movie cast by movieID (to be used with one of the other methods
-        public async Task<ApiQueryResponse<MovieCredit>> GetCastByMovie(int _movieID)
+        private async Task<ApiQueryResponse<MovieCredit>> GetCastByMovie(int _movieID)
         {
             ApiQueryResponse<MovieCredit> response = await MovieApi.GetCreditsAsync(_movieID, "en");
             return response;
@@ -88,14 +88,14 @@ namespace Social_Movie_Manager
 
 
 
-        public async Task<ApiSearchResponse<MovieInfo>> GetMovieByGenre(int _genreID, int _page)
+        private async Task<ApiSearchResponse<MovieInfo>> GetMovieByGenre(int _genreID, int _page)
         {
             ApiSearchResponse<MovieInfo> response = await GenreApi.FindMoviesByIdAsync(_genreID, _page, "en");
 
             return response;
         }
 
-        public List<Movie> Get_Upcoming_NowPlaying(SearchType _searchType, int _page)
+        public List<Movie> GetMovie(SearchType _searchType, int _page)
         {
             ApiSearchResponse<Movie> Movies;
 

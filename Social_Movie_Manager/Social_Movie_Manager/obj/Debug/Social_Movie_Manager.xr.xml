@@ -71,6 +71,19 @@
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Social_Movie_Manager.Pages.AboutPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
     <RootType FullName="Social_Movie_Manager.Pages.ExplorePage" />
     <RootType FullName="Social_Movie_Manager.Pages.GroupsPage" />
     <RootType FullName="Social_Movie_Manager.Pages.MainPage" />

@@ -46,13 +46,14 @@ namespace Social_Movie_Manager
                 //Set element info
                 _root.ColumnDefinitions.Add(new ColumnDefinition());
                 img.Source = new BitmapImage(new Uri(string.Format("http://image.tmdb.org/t/p/w342{0}", item.PosterPath)));
+                img.Name = item.Id.ToString();
                 btn.Content = img;
                 txt.Text = item.Title;
 
                 //Button settings
                 btn.Height = 130;
                 btn.Width = 130;
-                btn.Background = new SolidColorBrush(Colors.Black);
+                btn.Background = new SolidColorBrush(Colors.White);
                 btn.VerticalAlignment = VerticalAlignment.Top;
                 btn.SetValue(Grid.ColumnProperty, index);
 
@@ -66,17 +67,18 @@ namespace Social_Movie_Manager
                 txt.Height = 35;
                 txt.Width = 110;    
                 txt.SetValue(Grid.ColumnProperty, index);
+
                 index = index + 1;
 
                 //Add elements to grid
                 _root.Children.Add(btn);
                 _root.Children.Add(txt);
-
                 if (item == _movieInfo.Last())
                 {
                     //Button settings
                     Image img2 = new Image();
                     img2.Source = new BitmapImage(new Uri("ms-appx:///Assets/load_more.png", UriKind.RelativeOrAbsolute));
+                    img2.Name = "Load_More";
                     btn.Content = img2;
 
                     btn.Height = 130;
@@ -125,6 +127,7 @@ namespace Social_Movie_Manager
                 //Set element info
                 _root.ColumnDefinitions.Add(new ColumnDefinition());
                 img.Source = new BitmapImage(new Uri(string.Format("http://image.tmdb.org/t/p/w342{0}", item.PosterPath)));
+                img.Name = item.Id.ToString();
                 btn.Content = img;
                 txt.Text = item.Title;
 
@@ -145,6 +148,7 @@ namespace Social_Movie_Manager
                 txt.Height = 35;
                 txt.Width = 110;
                 txt.SetValue(Grid.ColumnProperty, index);
+               
                 index = index + 1;
 
                 _root.Children.Add(btn);
@@ -155,6 +159,7 @@ namespace Social_Movie_Manager
                     //Button settings
                     Image img2 = new Image();
                     img2.Source = new BitmapImage(new Uri("ms-appx:///Assets/load_more.png", UriKind.RelativeOrAbsolute));
+                    img2.Name = "Load_More";
                     btn.Content = img2;
 
                     btn.Height = 130;

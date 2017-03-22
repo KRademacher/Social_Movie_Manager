@@ -22,7 +22,11 @@
             </Grid.ColumnDefinitions>
 
             <Image Margin="10" x:Name="DrawerIcon" Grid.Column="0" Source="/Assets/drawer_icon.png" HorizontalAlignment="Left" Tapped="DrawerIcon_Tapped" />
-            <TextBlock Grid.Column="1" Text="Explore" Foreground="White" VerticalAlignment="Center" FontSize="18" />
+            <TextBlock Grid.Column="1" Text="Explore" Foreground="White" VerticalAlignment="Center" FontSize="18" Margin="0,19,276,19" />
+            <Border BorderBrush="#FF000000" CornerRadius="8,8,8,8" BorderThickness="1" Margin="74,2,21,0" Grid.Column="1">
+                <TextBox Grid.Column="1" Text="Search" Foreground="Gray" BorderThickness="0" VerticalAlignment="Center" >
+                </TextBox>
+            </Border>
         </Grid>
         <!--Drawer Layout-->
         <drawerLayout:DrawerLayout Grid.Row="1" x:Name="DrawerLayout">

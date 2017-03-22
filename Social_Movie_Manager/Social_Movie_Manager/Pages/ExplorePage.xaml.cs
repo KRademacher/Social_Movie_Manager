@@ -29,18 +29,26 @@ namespace Social_Movie_Manager.Pages
             this.InitializeComponent();
             DrawerLayout.InitializeDrawerLayout();
 
+            //Initialize the movie db api
             tmdb = new TMDB();
 
-            Popular.DataContext = Popular;
+            //Add on_click handlers
+            Popular.Tapped += Popular_Tapped;
+            Upcoming.Tapped += Upcoming_Tapped;
+            NowInTheaters.Tapped += NowInTheaters_Tapped;
+
+            //Add movies to list in background
             Task.Run(() =>
             {
                 PopularMovies = tmdb.GetMovieInfo(TMDB.SearchType.Popular, 1);
-                UpcomingMovies = tmdb.Get_Upcoming_NowPlaying(TMDB.SearchType.Upcoming, 1);
-                NITMovies = tmdb.Get_Upcoming_NowPlaying(TMDB.SearchType.NowPlaying, 1);
+                UpcomingMovies = tmdb.GetMovie(TMDB.SearchType.Upcoming, 1);
+                NITMovies = tmdb.GetMovie(TMDB.SearchType.NowPlaying, 1);
                 UpdateUI();
             });
 
         }
+
+       
 
         //Update the GUI async
         private async void UpdateUI()
@@ -87,6 +95,28 @@ namespace Social_Movie_Manager.Pages
         private void SlideMenu_LostFocus(object sender, RoutedEventArgs e)
         {
             DrawerLayout.CloseDrawer();
+        }
+
+        private void NowInTheaters_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var root = e.OriginalSource as Image;
+            int movieId = Convert.ToInt32(root.Name);
+        }
+
+        private void Upcoming_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var root = e.OriginalSource as Image;
+            int movieId = Convert.ToInt32(root.Name);
+        }
+
+        private void Popular_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var root = e.OriginalSource as Image;
+            if (root.Name.ToUpper() == "LOAD_MORE")
+            {
+
+            }
+            int movieId = Convert.ToInt32(root.Name);
         }
     }
 }
