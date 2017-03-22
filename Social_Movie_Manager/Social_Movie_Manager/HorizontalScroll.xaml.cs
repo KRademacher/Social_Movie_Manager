@@ -71,6 +71,33 @@ namespace Social_Movie_Manager
                 //Add elements to grid
                 _root.Children.Add(btn);
                 _root.Children.Add(txt);
+
+                if (item == _movieInfo.Last())
+                {
+                    //Button settings
+                    Image img2 = new Image();
+                    img2.Source = new BitmapImage(new Uri("ms-appx:///Assets/load_more.png", UriKind.RelativeOrAbsolute));
+                    btn.Content = img2;
+
+                    btn.Height = 130;
+                    btn.Width = 130;
+                    btn.Background = new SolidColorBrush(Colors.White);
+                    btn.VerticalAlignment = VerticalAlignment.Top;
+                    btn.SetValue(Grid.ColumnProperty, index);
+
+                    //Textbox settings
+                    txt.Text = "Load More";
+
+                    txt.TextWrapping = TextWrapping.WrapWholeWords;
+                    txt.TextAlignment = TextAlignment.Center;
+                    txt.Foreground = new SolidColorBrush(Colors.Black);
+                    txt.FontSize = 14;
+                    txt.VerticalAlignment = VerticalAlignment.Bottom;
+                    txt.Margin = txtMargin;
+                    txt.Height = 35;
+                    txt.Width = 110;
+                    txt.SetValue(Grid.ColumnProperty, index);
+                }
             }
             this.UpdateLayout();
         }
@@ -104,7 +131,7 @@ namespace Social_Movie_Manager
                 //Button settings
                 btn.Height = 130;
                 btn.Width = 130;
-                btn.Background = new SolidColorBrush(Colors.Black);
+                btn.Background = new SolidColorBrush(Colors.White);
                 btn.VerticalAlignment = VerticalAlignment.Top;
                 btn.SetValue(Grid.ColumnProperty, index);
 
@@ -122,6 +149,33 @@ namespace Social_Movie_Manager
 
                 _root.Children.Add(btn);
                 _root.Children.Add(txt);
+
+                if (item == _movieInfo.Last())
+                {
+                    //Button settings
+                    Image img2 = new Image();
+                    img2.Source = new BitmapImage(new Uri("ms-appx:///Assets/load_more.png", UriKind.RelativeOrAbsolute));
+                    btn.Content = img2;
+
+                    btn.Height = 130;
+                    btn.Width = 130;
+                    btn.Background = new SolidColorBrush(Colors.White);
+                    btn.VerticalAlignment = VerticalAlignment.Top;
+                    btn.SetValue(Grid.ColumnProperty, index);
+                    
+                    //Textbox settings
+                    txt.Text = "Load More";
+
+                    txt.TextWrapping = TextWrapping.WrapWholeWords;
+                    txt.TextAlignment = TextAlignment.Center;
+                    txt.Foreground = new SolidColorBrush(Colors.Black);
+                    txt.FontSize = 14;
+                    txt.VerticalAlignment = VerticalAlignment.Bottom;
+                    txt.Margin = txtMargin;
+                    txt.Height = 35;
+                    txt.Width = 110;
+                    txt.SetValue(Grid.ColumnProperty, index);
+                }
             }
             this.UpdateLayout();
         }

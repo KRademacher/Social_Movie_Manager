@@ -37,6 +37,9 @@
     <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\drawer_icon.png">
       <PackagePath>Assets\drawer_icon.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\load_more.png">
+      <PackagePath>Assets\load_more.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

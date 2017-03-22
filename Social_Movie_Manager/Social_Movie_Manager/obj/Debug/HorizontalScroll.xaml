@@ -13,11 +13,10 @@
             <TextBlock x:Name="Title" Foreground="Black" FontFamily="Segoe UI" FontSize="30" TextAlignment="Center" Margin="0,0,0,0"/>
             <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled">
                 <Grid x:Name="_root">
+
                 </Grid>
             </ScrollViewer>
         </StackPanel>
-       
-       
     </Grid>
 </UserControl>
 
