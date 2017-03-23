@@ -48,5 +48,20 @@ namespace Social_Movie_Manager.Pages
             else
                 Application.Current.Exit();
         }
+
+        private void Movie_Reviews_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void Facebook_Button_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void Twitter_Button_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -20,18 +20,18 @@
                 <RowDefinition Height="220"/>
                 <RowDefinition Height="25"/>
                 <RowDefinition Height="50"/>
-                <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-            <Image x:Name="Movie_Poster" Grid.Row="0" Source="{Binding}" Height="200" Width="135" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+            <Image x:Name="Movie_Poster" Grid.Row="0" Source="/Assets/drawer_icon.png" Height="200" Width="135" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0"/>
             <TextBlock x:Name="Movie_Rating" Grid.Row="1" Text="Rating: " Foreground="Black" FontSize="20" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <TextBlock x:Name="Movie_Reviews" Grid.Row="1" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,50,0" Tapped="Movie_Reviews_Tapped">
+            <TextBlock x:ConnectionId='1' x:Name="Movie_Reviews" Grid.Row="1" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,50,0"                              >
                 <Underline>
                     <Run Text="Reviews" Foreground="Black" FontSize="20"/>
                 </Underline>
             </TextBlock>
-            <Image x:Name="Facebook_Button" Grid.Row="2" Source="/Assets/facebook.png" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,0,0,0" Tapped="Facebook_Button_Tapped"/>
-            <Image x:Name="Twitter_Button" Grid.Row="2" Source="/Assets/twitter.jpg" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,0,0,0" Tapped="Twitter_Button_Tapped"/>
-            <TextBlock x:Name="Movie_Info" Grid.Row="3" Text="{Binding}" Height="300" Width="300" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <Image x:ConnectionId='2' x:Name="Facebook_Button" Grid.Row="2" Source="/Assets/facebook.png" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,0,0,0"                                />
+            <Image x:ConnectionId='3' x:Name="Twitter_Button" Grid.Row="2" Source="/Assets/twitter.jpg" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,0,0,0"                               />
+            
         </Grid>
     </Grid>
 </Page>
+
