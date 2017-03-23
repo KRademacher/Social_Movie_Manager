@@ -29,6 +29,11 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Inlines" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="HorizontalScrollBarVisibility" />
@@ -68,6 +73,9 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Source" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Social_Movie_Manager.Pages.AboutPage" />
@@ -88,6 +96,15 @@
     <RootType FullName="Social_Movie_Manager.Pages.GroupsPage" />
     <RootType FullName="Social_Movie_Manager.Pages.MainPage" />
     <RootType FullName="Social_Movie_Manager.Pages.BlacklistPage" />
+    <RootType FullName="Windows.UI.Xaml.Documents.Underline">
+      <RootProperty Name="Inlines" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+    </RootType>
+    <RootType FullName="Social_Movie_Manager.Pages.MovieInfoPage" />
     <RootType FullName="Social_Movie_Manager.Pages.WishlistPage" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />

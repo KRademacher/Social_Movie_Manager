@@ -1,10 +1,12 @@
 Assets\drawer_icon.png
+Assets\facebook.png
 Assets\load_more.png
 Assets\Logo.scale-240.png
 Assets\SmallLogo.scale-240.png
 Assets\SplashScreen.scale-240.png
 Assets\Square71x71Logo.scale-240.png
 Assets\StoreLogo.scale-240.png
+Assets\twitter.jpg
 Assets\WideLogo.scale-240.png
 App.xbf
 HorizontalScroll.xbf
@@ -13,6 +15,7 @@ Pages\BlacklistPage.xbf
 Pages\ExplorePage.xbf
 Pages\GroupsPage.xbf
 Pages\MainPage.xbf
+Pages\MovieInfoPage.xbf
 Pages\WishlistPage.xbf
 Slide Menu.xbf
 Social_Movie_Manager.xr.xml
