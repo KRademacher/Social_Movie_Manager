@@ -24,6 +24,8 @@ namespace Social_Movie_Manager
     {
         public void CreateElementsMovieInfo(ref List<MovieInfo> _movieInfo, bool _setTitle, string _title = null)
         {
+           
+            _root.Children.Clear();
             int index = 0;
             _root.Height = 160;
             _root.RowDefinitions.Add(new RowDefinition());
@@ -71,8 +73,17 @@ namespace Social_Movie_Manager
                 index = index + 1;
 
                 //Add elements to grid
-                _root.Children.Add(btn);
-                _root.Children.Add(txt);
+                try
+                {
+                    _root.Children.Add(btn);
+                    _root.Children.Add(txt);
+                }
+                catch (ArgumentException ex)
+                {
+
+                    
+                }
+               
                 if (item == _movieInfo.Last())
                 {
                     //Button settings
@@ -151,9 +162,17 @@ namespace Social_Movie_Manager
                
                 index = index + 1;
 
-                _root.Children.Add(btn);
-                _root.Children.Add(txt);
+                try
+                {
+                    _root.Children.Add(btn);
+                    _root.Children.Add(txt);
 
+                }
+                catch (ArgumentException ex)
+                {
+                    index = index - 1;
+                }
+               
                 if (item == _movieInfo.Last())
                 {
                     //Button settings
@@ -185,6 +204,11 @@ namespace Social_Movie_Manager
             this.UpdateLayout();
         }
 
+        public void LoadMoreMovieInfos(ref List<MovieInfo> _movieInfo)
+        {
+            
+            CreateElementsMovieInfo(ref _movieInfo, false);
+        }
         public HorizontalScroll()
         {
             this.InitializeComponent();

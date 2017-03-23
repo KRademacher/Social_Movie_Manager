@@ -1,14 +1,12 @@
 ﻿using DM.MovieApi.MovieDb.Movies;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Windows.Phone.UI.Input;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -20,10 +18,13 @@ namespace Social_Movie_Manager.Pages
     /// </summary>
     public sealed partial class ExplorePage : Page
     {
-        TMDB tmdb;
-        public List<MovieInfo> PopularMovies;
-        public List<Movie> UpcomingMovies;
-        public List<Movie> NITMovies;
+        private TMDB tmdb;
+        private List<MovieInfo> PopularMovies = new List<MovieInfo>();
+        private List<Movie> UpcomingMovies = new List<Movie>();
+        private List<Movie> NITMovies = new List<Movie>();
+        private int PopPage = 1;
+        private int UpComPage = 1;
+        private int NITPage = 1;
         public ExplorePage()
         {
             this.InitializeComponent();
@@ -38,20 +39,23 @@ namespace Social_Movie_Manager.Pages
             NowInTheaters.Tapped += NowInTheaters_Tapped;
 
             //Add movies to list in background
-            Task.Run(() =>
-            {
-                PopularMovies = tmdb.GetMovieInfo(TMDB.SearchType.Popular, 1);
-                UpcomingMovies = tmdb.GetMovie(TMDB.SearchType.Upcoming, 1);
-                NITMovies = tmdb.GetMovie(TMDB.SearchType.NowPlaying, 1);
-                UpdateUI();
-            });
+            FillMovieLists();
 
         }
 
-       
+        private Task FillMovieLists()
+        {
+            return Task.Run(() =>
+            {
+                PopularMovies.AddRange(tmdb.GetMovieInfo(TMDB.SearchType.Popular, PopPage));
+                UpcomingMovies.AddRange(tmdb.GetMovie(TMDB.SearchType.Upcoming, UpComPage));
+                NITMovies.AddRange(tmdb.GetMovie(TMDB.SearchType.NowPlaying, NITPage));
+                UpdateUIAsync();
+            });
+        }
 
         //Update the GUI async
-        private async void UpdateUI()
+        private async void UpdateUIAsync()
         {
 
             await Dispatcher.RunAsync(CoreDispatcherPriority.High, () =>
@@ -114,9 +118,13 @@ namespace Social_Movie_Manager.Pages
             var root = e.OriginalSource as Image;
             if (root.Name.ToUpper() == "LOAD_MORE")
             {
-
+                PopPage++;
+                FillMovieLists();
             }
-            int movieId = Convert.ToInt32(root.Name);
+            else
+            {
+                int movieId = Convert.ToInt32(root.Name);
+            }
         }
     }
 }
