@@ -39,29 +39,47 @@ namespace Social_Movie_Manager.Pages
             NowInTheaters.Tapped += NowInTheaters_Tapped;
 
             //Add movies to list in background
-            FillMovieLists();
-
-        }
-
-        private Task FillMovieLists()
-        {
-            return Task.Run(() =>
+            Task.Run(() =>
             {
                 PopularMovies.AddRange(tmdb.GetMovieInfo(TMDB.SearchType.Popular, PopPage));
                 UpcomingMovies.AddRange(tmdb.GetMovie(TMDB.SearchType.Upcoming, UpComPage));
                 NITMovies.AddRange(tmdb.GetMovie(TMDB.SearchType.NowPlaying, NITPage));
                 UpdateUIAsync();
             });
+
         }
 
         //Update the GUI async
         private async void UpdateUIAsync()
         {
-
             await Dispatcher.RunAsync(CoreDispatcherPriority.High, () =>
             {
                 Popular.CreateElementsMovieInfo(ref PopularMovies, true, "Popular");
                 Upcoming.CreateElementsMovie(ref UpcomingMovies, true, "Upcoming");
+                NowInTheaters.CreateElementsMovie(ref NITMovies, true, "Now in the theaters");
+            });
+        }
+
+        private async void UpdateUIPop()
+        {
+            await Dispatcher.RunAsync(CoreDispatcherPriority.High, () =>
+            {
+                Popular.CreateElementsMovieInfo(ref PopularMovies, true, "Popular");
+            });
+        }
+
+        private async void UpdateUIUpCom()
+        {
+            await Dispatcher.RunAsync(CoreDispatcherPriority.High, () =>
+            {
+                Upcoming.CreateElementsMovie(ref UpcomingMovies, true, "Upcoming");
+            });
+        }
+
+        private async void UpdateUINIT()
+        {
+            await Dispatcher.RunAsync(CoreDispatcherPriority.High, () =>
+            {
                 NowInTheaters.CreateElementsMovie(ref NITMovies, true, "Now in the theaters");
             });
         }
@@ -103,27 +121,127 @@ namespace Social_Movie_Manager.Pages
 
         private void NowInTheaters_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            var root = e.OriginalSource as Image;
-            int movieId = Convert.ToInt32(root.Name);
+            Image root = null;
+            TextBlock _root = null;
+
+            root = e.OriginalSource as Image;
+            if (root == null)
+            {
+                _root = e.OriginalSource as TextBlock;
+                if (_root.Text.ToUpper() == "LOAD MORE")
+                {
+                    NITPage++;
+                    Task.Run(() =>
+                    {
+                        NITMovies.AddRange(tmdb.GetMovie(TMDB.SearchType.NowPlaying, NITPage));
+                        UpdateUINIT();
+                    });
+                }
+                else
+                {
+                    int movieId = Convert.ToInt32(root.Name);
+                }
+
+            }
+            else
+            {
+                if (root.Name.ToUpper() == "LOAD_MORE")
+                {
+                    NITPage++;
+                    Task.Run(() =>
+                    {
+                        NITMovies.AddRange(tmdb.GetMovie(TMDB.SearchType.NowPlaying, NITPage));
+                        UpdateUINIT();
+                    });
+                }
+                else
+                {
+                    int movieId = Convert.ToInt32(root.Name);
+                }
+            }
         }
 
         private void Upcoming_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            var root = e.OriginalSource as Image;
-            int movieId = Convert.ToInt32(root.Name);
+            Image root = null;
+            TextBlock _root = null;
+
+            root = e.OriginalSource as Image;
+            if (root == null)
+            {
+                _root = e.OriginalSource as TextBlock;
+                if (_root.Text.ToUpper() == "LOAD MORE")
+                {
+                    UpComPage++;
+                    Task.Run(() =>
+                    {
+                        UpcomingMovies.AddRange(tmdb.GetMovie(TMDB.SearchType.Upcoming, UpComPage));
+                        UpdateUIUpCom();
+                    });
+                }
+                else
+                {
+                    int movieId = Convert.ToInt32(root.Name);
+                }
+
+            }
+            else
+            {
+                if (root.Name.ToUpper() == "LOAD_MORE")
+                {
+                    PopPage++;
+                    Task.Run(() =>
+                    {
+                        PopularMovies.AddRange(tmdb.GetMovieInfo(TMDB.SearchType.Popular, PopPage));
+                        UpdateUIPop();
+                    });
+                }
+                else
+                {
+                    int movieId = Convert.ToInt32(root.Name);
+                }
+            }
         }
 
         private void Popular_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            var root = e.OriginalSource as Image;
-            if (root.Name.ToUpper() == "LOAD_MORE")
+            Image root = null;
+            TextBlock _root = null;
+
+            root = e.OriginalSource as Image;
+            if (root == null)
             {
-                PopPage++;
-                FillMovieLists();
+                _root = e.OriginalSource as TextBlock;
+                if (_root.Text.ToUpper() == "LOAD MORE")
+                {
+                    PopPage++;
+                    Task.Run(() =>
+                    {
+                        PopularMovies.AddRange(tmdb.GetMovieInfo(TMDB.SearchType.Popular, PopPage));
+                        UpdateUIPop();
+                    });
+                }
+                else
+                {
+                    int movieId = Convert.ToInt32(root.Name);
+                }
+
             }
             else
             {
-                int movieId = Convert.ToInt32(root.Name);
+                if (root.Name.ToUpper() == "LOAD_MORE")
+                {
+                    PopPage++;
+                    Task.Run(() =>
+                    {
+                        PopularMovies.AddRange(tmdb.GetMovieInfo(TMDB.SearchType.Popular, PopPage));
+                        UpdateUIPop();
+                    });
+                }
+                else
+                {
+                    int movieId = Convert.ToInt32(root.Name);
+                }
             }
         }
     }

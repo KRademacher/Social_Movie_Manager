@@ -37,6 +37,9 @@
     <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\drawer_icon.png">
       <PackagePath>Assets\drawer_icon.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\facebook.png">
+      <PackagePath>Assets\facebook.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\load_more.png">
       <PackagePath>Assets\load_more.png</PackagePath>
     </AppxPackagedFile>
@@ -64,6 +67,9 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\Assets\twitter.jpg">
+      <PackagePath>Assets\twitter.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Social_Movie_Manager.xr.xml">
       <PackagePath>Social_Movie_Manager.xr.xml</PackagePath>
     </AppxPackagedFile>
@@ -87,6 +93,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\BlacklistPage.xbf">
       <PackagePath>Pages\BlacklistPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\MovieInfoPage.xbf">
+      <PackagePath>Pages\MovieInfoPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\WishlistPage.xbf">
       <PackagePath>Pages\WishlistPage.xbf</PackagePath>

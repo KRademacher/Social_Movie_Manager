@@ -24,8 +24,10 @@ namespace Social_Movie_Manager
     {
         public void CreateElementsMovieInfo(ref List<MovieInfo> _movieInfo, bool _setTitle, string _title = null)
         {
-           
+            _movieInfo.Distinct().ToList();
             _root.Children.Clear();
+            _root.ColumnDefinitions.Clear();
+            _root.RowDefinitions.Clear();
             int index = 0;
             _root.Height = 160;
             _root.RowDefinitions.Add(new RowDefinition());
@@ -70,20 +72,13 @@ namespace Social_Movie_Manager
                 txt.Width = 110;    
                 txt.SetValue(Grid.ColumnProperty, index);
 
-                index = index + 1;
-
                 //Add elements to grid
-                try
-                {
-                    _root.Children.Add(btn);
-                    _root.Children.Add(txt);
-                }
-                catch (ArgumentException ex)
-                {
+                
+                _root.Children.Add(btn);
+                _root.Children.Add(txt);
 
-                    
-                }
-               
+                index = index + 1;
+                
                 if (item == _movieInfo.Last())
                 {
                     //Button settings
@@ -117,6 +112,11 @@ namespace Social_Movie_Manager
 
         public void CreateElementsMovie(ref List<Movie> _movieInfo, bool _setTitle, string _title = null)
         {
+             _movieInfo.Distinct().ToList();
+            _root.Children.Clear();
+            _root.ColumnDefinitions.Clear();
+            _root.RowDefinitions.Clear();
+
             int index = 0;
             _root.Height = 160;
             _root.RowDefinitions.Add(new RowDefinition());
@@ -141,6 +141,7 @@ namespace Social_Movie_Manager
                 img.Name = item.Id.ToString();
                 btn.Content = img;
                 txt.Text = item.Title;
+           
 
                 //Button settings
                 btn.Height = 130;
@@ -153,6 +154,7 @@ namespace Social_Movie_Manager
                 txt.TextWrapping = TextWrapping.WrapWholeWords;
                 txt.TextAlignment = TextAlignment.Center;
                 txt.Foreground = new SolidColorBrush(Colors.Black);
+               
                 txt.FontSize = 14;
                 txt.VerticalAlignment = VerticalAlignment.Bottom;
                 txt.Margin = txtMargin;
@@ -162,17 +164,9 @@ namespace Social_Movie_Manager
                
                 index = index + 1;
 
-                try
-                {
-                    _root.Children.Add(btn);
-                    _root.Children.Add(txt);
+                _root.Children.Add(btn);
+                _root.Children.Add(txt);
 
-                }
-                catch (ArgumentException ex)
-                {
-                    index = index - 1;
-                }
-               
                 if (item == _movieInfo.Last())
                 {
                     //Button settings
@@ -212,6 +206,7 @@ namespace Social_Movie_Manager
         public HorizontalScroll()
         {
             this.InitializeComponent();
+            
         }
     }
 }

@@ -1,6 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\kevin\documents\visual studio 2015\projects\social_movie_manager\social_movie_manager\obj\debug\intermediatexaml\social_movie_manager.exe" HashGuid="68f9fb4b-3089-7625-5f4d-f8d96e66ab10" />
+    <LocalAssembly PathName="c:\users\jules\documents\github\social_movie_manager\social_movie_manager\social_movie_manager\obj\debug\intermediatexaml\social_movie_manager.exe" HashGuid="33ac1d28-6cbd-bb97-432a-b4b81f4b88e7" />
     <ReferenceAssembly PathName="c:\users\jules\documents\github\social_movie_manager\social_movie_manager\packages\themoviedbwrapper.0.8.2\lib\netstandard1.1\dm.movieapi.dll" HashGuid="dc913de5-c263-d855-96f4-315d112dd984" />
     <ReferenceAssembly PathName="c:\users\jules\documents\github\social_movie_manager\social_movie_manager\packages\drawerlayout.1.0.4\lib\drawerlayout.dll" HashGuid="b0d3b3f8-90b7-6a66-b416-66f64dcf26fa" />
     <ReferenceAssembly PathName="c:\users\jules\documents\github\social_movie_manager\social_movie_manager\packages\newtonsoft.json.9.0.1\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="424e6aa8-ba94-c678-e707-af9fe9838e1a" />

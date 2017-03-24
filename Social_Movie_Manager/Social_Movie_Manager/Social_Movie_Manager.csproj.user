@@ -1,13 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-<<<<<<< HEAD
     <DeviceId>A6BAF594-9315-40C3-AD16-F5B8A425A7AB</DeviceId>
-    <DebugEngines>{92EF0900-2251-11D2-B72E-0000F87572EF}</DebugEngines>
-    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
-    <BackgroundTaskDebugEngines>{92EF0900-2251-11D2-B72E-0000F87572EF}</BackgroundTaskDebugEngines>
-=======
-    <DeviceId>DA831653-315E-41D9-BF63-CCCE346F4E9C</DeviceId>
->>>>>>> 774bd69c90058ef83607ee28d8c088e93a61af3b
   </PropertyGroup>
 </Project>
