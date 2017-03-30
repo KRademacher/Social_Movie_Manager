@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 using Social_Movie_Manager.Pages;
+using Windows.Phone.UI.Input;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -37,6 +38,21 @@ namespace Social_Movie_Manager
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
 
+            HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+
+        }
+
+        private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+
+            if (rootFrame != null && rootFrame.CanGoBack)
+            {
+                e.Handled = true;
+                rootFrame.GoBack();
+            }
+            else
+                Application.Current.Exit();
         }
 
         /// <summary>

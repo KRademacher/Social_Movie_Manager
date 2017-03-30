@@ -97,6 +97,9 @@
     <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\MovieInfoPage.xbf">
       <PackagePath>Pages\MovieInfoPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\SearchPage.xbf">
+      <PackagePath>Pages\SearchPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\WishlistPage.xbf">
       <PackagePath>Pages\WishlistPage.xbf</PackagePath>
     </AppxPackagedFile>

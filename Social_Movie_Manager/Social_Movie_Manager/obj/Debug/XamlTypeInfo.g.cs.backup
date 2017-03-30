@@ -124,7 +124,7 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[15];
+            _typeNameTable = new string[16];
             _typeNameTable[0] = "Social_Movie_Manager.HorizontalScroll";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[2] = "DrawerLayout.DrawerLayout";
@@ -139,9 +139,10 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
             _typeNameTable[11] = "Social_Movie_Manager.Pages.MainPage";
             _typeNameTable[12] = "Social_Movie_Manager.Pages.BlacklistPage";
             _typeNameTable[13] = "Social_Movie_Manager.Pages.MovieInfoPage";
-            _typeNameTable[14] = "Social_Movie_Manager.Pages.WishlistPage";
+            _typeNameTable[14] = "Social_Movie_Manager.Pages.SearchPage";
+            _typeNameTable[15] = "Social_Movie_Manager.Pages.WishlistPage";
 
-            _typeTable = new global::System.Type[15];
+            _typeTable = new global::System.Type[16];
             _typeTable[0] = typeof(global::Social_Movie_Manager.HorizontalScroll);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[2] = typeof(global::DrawerLayout.DrawerLayout);
@@ -156,7 +157,8 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
             _typeTable[11] = typeof(global::Social_Movie_Manager.Pages.MainPage);
             _typeTable[12] = typeof(global::Social_Movie_Manager.Pages.BlacklistPage);
             _typeTable[13] = typeof(global::Social_Movie_Manager.Pages.MovieInfoPage);
-            _typeTable[14] = typeof(global::Social_Movie_Manager.Pages.WishlistPage);
+            _typeTable[14] = typeof(global::Social_Movie_Manager.Pages.SearchPage);
+            _typeTable[15] = typeof(global::Social_Movie_Manager.Pages.WishlistPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -200,7 +202,8 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
         private object Activate_11_MainPage() { return new global::Social_Movie_Manager.Pages.MainPage(); }
         private object Activate_12_BlacklistPage() { return new global::Social_Movie_Manager.Pages.BlacklistPage(); }
         private object Activate_13_MovieInfoPage() { return new global::Social_Movie_Manager.Pages.MovieInfoPage(); }
-        private object Activate_14_WishlistPage() { return new global::Social_Movie_Manager.Pages.WishlistPage(); }
+        private object Activate_14_SearchPage() { return new global::Social_Movie_Manager.Pages.SearchPage(); }
+        private object Activate_15_WishlistPage() { return new global::Social_Movie_Manager.Pages.WishlistPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -295,9 +298,16 @@ namespace Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 14:   //  Social_Movie_Manager.Pages.WishlistPage
+            case 14:   //  Social_Movie_Manager.Pages.SearchPage
                 userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_WishlistPage;
+                userType.Activator = Activate_14_SearchPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Social_Movie_Manager.Pages.WishlistPage
+                userType = new global::Social_Movie_Manager.Social_Movie_Manager_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_15_WishlistPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

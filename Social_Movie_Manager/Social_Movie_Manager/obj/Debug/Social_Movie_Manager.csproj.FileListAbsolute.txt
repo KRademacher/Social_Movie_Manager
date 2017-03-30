@@ -156,6 +156,7 @@ C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\MainPage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\BlacklistPage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\MovieInfoPage.xbf
+C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\SearchPage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Pages\WishlistPage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Slide Menu.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\bin\Debug\Social_Movie_Manager.xr.xml
@@ -186,32 +187,36 @@ C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\BlacklistPage.g.cs
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\MovieInfoPage.g.i.cs
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\MovieInfoPage.g.cs
+C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\SearchPage.g.i.cs
+C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\SearchPage.g.cs
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\WishlistPage.g.i.cs
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\WishlistPage.g.cs
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Slide Menu.g.i.cs
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Slide Menu.g.cs
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\XamlTypeInfo.g.cs
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\App.xaml
+C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\HorizontalScroll.xaml
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\AboutPage.xaml
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\ExplorePage.xaml
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\GroupsPage.xaml
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\MainPage.xaml
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\BlacklistPage.xaml
-C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\MovieInfoPage.xaml
+C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\SearchPage.xaml
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\WishlistPage.xaml
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Slide Menu.xaml
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\App.xbf
+C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\HorizontalScroll.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\AboutPage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\ExplorePage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\GroupsPage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\MainPage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\BlacklistPage.xbf
-C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\MovieInfoPage.xbf
+C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\SearchPage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\WishlistPage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Slide Menu.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\XamlSaveStateFile.xml
-C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\HorizontalScroll.xaml
-C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\HorizontalScroll.xbf
+C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\MovieInfoPage.xaml
+C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Pages\MovieInfoPage.xbf
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Social_Movie_Manager.exe
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Social_Movie_Manager.pdb
 C:\Users\jules\Documents\Github\Social_Movie_Manager\Social_Movie_Manager\Social_Movie_Manager\obj\Debug\Social_Movie_Manager.csproj.GenerateResource.Cache

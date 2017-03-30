@@ -20,20 +20,18 @@
       <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Foreground" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Text" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Inlines" />
-      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="VerticalContentAlignment" />
@@ -42,7 +40,10 @@
       <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="Social_Movie_Manager.HorizontalScroll" />
+    <RootType FullName="Social_Movie_Manager.HorizontalScroll">
+      <RootProperty Name="Background" />
+      <RootProperty Name="TabIndex" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
@@ -81,32 +82,12 @@
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Social_Movie_Manager.Pages.AboutPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Border">
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="CornerRadius" />
-      <RootProperty Name="BorderThickness" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Child" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Text" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="BorderThickness" />
-      <RootProperty Name="VerticalAlignment" />
-    </RootType>
     <RootType FullName="Social_Movie_Manager.Pages.ExplorePage" />
     <RootType FullName="Social_Movie_Manager.Pages.GroupsPage" />
     <RootType FullName="Social_Movie_Manager.Pages.MainPage" />
     <RootType FullName="Social_Movie_Manager.Pages.BlacklistPage" />
-    <RootType FullName="Windows.UI.Xaml.Documents.Underline">
-      <RootProperty Name="Inlines" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.Run">
-      <RootProperty Name="Text" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="FontSize" />
-    </RootType>
     <RootType FullName="Social_Movie_Manager.Pages.MovieInfoPage" />
+    <RootType FullName="Social_Movie_Manager.Pages.SearchPage" />
     <RootType FullName="Social_Movie_Manager.Pages.WishlistPage" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />

@@ -9,9 +9,9 @@
     d:DesignHeight="160">
 
     <Grid>
-        <StackPanel>
-            <TextBlock x:Name="Title" Foreground="Black" FontFamily="Segoe UI" FontSize="30" TextAlignment="Center" Margin="0,0,0,0"/>
-            <ScrollViewer VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled">
+        <StackPanel >
+            <TextBlock x:Name="Title"  FontFamily="Segoe UI" FontSize="30" TextAlignment="Center" Margin="0,0,0,0"/>
+            <ScrollViewer x:Name="scrollview" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled">
                 <Grid x:Name="_root">
 
                 </Grid>

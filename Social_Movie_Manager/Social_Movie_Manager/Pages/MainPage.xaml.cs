@@ -51,13 +51,13 @@ namespace Social_Movie_Manager.Pages
 
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
         {
-            if (DrawerLayout.IsDrawerOpen)
-            {
-                DrawerLayout.CloseDrawer();
-                e.Handled = true;
-            }
-            else
-                Application.Current.Exit();
+            //if (DrawerLayout.IsDrawerOpen)
+            //{
+            //    DrawerLayout.CloseDrawer();
+            //    e.Handled = true;
+            //}
+            //else
+            //    Application.Current.Exit();
         }
 
         private void DrawerIcon_Tapped(object sender, TappedRoutedEventArgs e)

@@ -15,23 +15,27 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Grid x:Name="MainFragment" Grid.Row="1" Background="White">
+        <Grid x:Name="MainFragment" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="220"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="320"/>
                 <RowDefinition Height="25"/>
                 <RowDefinition Height="50"/>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Image x:Name="Movie_Poster" Grid.Row="0" Source="{Binding}" Height="200" Width="135" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0"/>
-            <TextBlock x:Name="Movie_Rating" Grid.Row="1" Text="Rating: " Foreground="Black" FontSize="20" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <TextBlock x:ConnectionId='1' x:Name="Movie_Reviews" Grid.Row="1" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,50,0"                              >
-                <Underline>
+            <TextBlock x:Name="Movie_Title" FontWeight="Bold" Grid.Row="0" Text="{Binding}" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="24" Height="Auto"/>
+            <TextBlock x:Name="Movie_Subtitle" Grid.Row="1" Text="{Binding}" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="12" Height="Auto"/>
+            <Image x:Name="Movie_Poster" Grid.Row="2" Source="{Binding}" Height="300" Width="200" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+            <TextBlock x:Name="Movie_Rating" Grid.Row="3" Text="{Binding}" Foreground="Black" FontSize="20" Height="25" Width="auto" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,0,0,0"/>
+            <!--<TextBlock x:Name="Movie_Reviews" Grid.Row="3" Height="25" Width="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,50,0" Tapped="Movie_Reviews_Tapped">-->
+                <!--<Underline>
                     <Run Text="Reviews" Foreground="Black" FontSize="20"/>
-                </Underline>
-            </TextBlock>
-            <Image x:ConnectionId='2' x:Name="Facebook_Button" Grid.Row="2" Source="/Assets/facebook.png" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,0,0,0"                                />
-            <Image x:ConnectionId='3' x:Name="Twitter_Button" Grid.Row="2" Source="/Assets/twitter.jpg" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,0,0,0"                               />
-            <TextBlock x:Name="Movie_Info" Grid.Row="3" Text="{Binding}" Height="300" Width="300" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                </Underline>-->
+            <!--</TextBlock>-->
+            <Image x:ConnectionId='1' x:Name="Facebook_Button" Grid.Row="4" Source="/Assets/facebook.png" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,0,0,0"                                />
+            <Image x:ConnectionId='2' x:Name="Twitter_Button" Grid.Row="4" Source="/Assets/twitter.jpg" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,0,0,0"                               />
+            <TextBlock x:Name="Movie_Info" Grid.Row="5" Text="" Height="auto" Width="300" VerticalAlignment="Top" HorizontalAlignment="Center"  TextWrapping="WrapWholeWords"/>
         </Grid>
     </Grid>
 </Page>
